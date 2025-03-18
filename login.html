@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="POST">
+            <!-- Email Field -->
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- CAPTCHA Field -->
+            <div class="input-group">
+                <label for="captcha">Enter CAPTCHA</label>
+                <div class="captcha-box">
+                    <span id="captcha-text">8X7Y2Z</span> <!-- Static CAPTCHA (You can use a dynamic one) -->
+                    <button type="button" onclick="refreshCaptcha()">⟳</button>
+                </div>
+                <input type="text" id="captcha" name="captcha" placeholder="Enter the CAPTCHA" required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+
+            <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </form>
+    </div>
+
+    <script>
+        function refreshCaptcha() {
+            const captchaText = "8X7Y2Z"; // You can generate a random string here
+            document.getElementById("captcha-text").innerText = captchaText;
+        }
+    </script>
+
+</body>
+</html>

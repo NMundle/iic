@@ -1,0 +1,186 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #757272;
+    color: white;
+    position: sticky; /* Makes the navbar sticky */
+    top: 0;  
+    
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+  }
+  .logo img {
+    max-height: 70px; /* Adjust logo size */
+    max-width: 150px; /* Adjust logo width */
+    margin-right: 10px;
+    margin-bottom: 0px;
+     
+  }
+  
+  /* Navigation Menu */
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .nav-menu li {
+    display: inline;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    transition: 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    background: #ffffff33;
+    border-radius: 5px;
+  }
+  
+  /* Auth Buttons */
+  .auth-buttons a {
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-left: 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .login-btn {
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .signup-btn {
+    background: #07406c;
+    color: white;
+    border: 1px solid black;
+    font-weight: 5px;
+  }
+  
+  .login-btn:hover {
+    background: white;
+    color: #333;
+  }
+  
+  .signup-btn:hover {
+    background: #d03b20;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-menu {
+      margin: 10px 0;
+    }
+  
+    .auth-buttons {
+      margin-top: 10px;
+    }
+    
+  }
+  
+  .container{
+    width:100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 2);
+    opacity: 0.9;
+    
+  }
+  
+ /* Footer Styles */
+.footer {
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    position: relative;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.footer-container div {
+    margin: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+    position: relative;
+    z-index: 2;
+}
+.footer-container p{
+    padding-bottom: 10px;
+    
+    
+}
+.contact a{
+    color: #d03b20;
+}
