@@ -16,6 +16,10 @@
     <!-- Logo -->
     <div class="logo"><img src="iic logo new.png"></div>
 
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+
+
     <!-- Navigation Links -->
     <ul class="nav-menu">
       <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
@@ -70,5 +74,12 @@
 
 <!-- FontAwesome Icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ <!-- JavaScript for Mobile Menu -->
+ <script>
+    document.querySelector(".menu-toggle").addEventListener("click", function () {
+      document.querySelector(".nav-menu").classList.toggle("active");
+    });
+  </script>
+
 </body>
 </html>
